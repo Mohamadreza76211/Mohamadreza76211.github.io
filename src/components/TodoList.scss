@@ -1,0 +1,86 @@
+.container {
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .FilterButtons Button {
+    width: 150px !important;
+  }
+
+  .input-container {
+    display: flex;
+    margin-bottom: 20px;
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px 0 0 5px;
+    }
+
+    button {
+      flex: 0;
+      background-color: #ff6f00;
+      color: #fff;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+
+      .task-container {
+        flex-grow: 1;
+      }
+
+      .button-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .delete-button,
+      .edit-button,
+      .schedule-button,
+      .done-button {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 40px;
+        margin-left: 5px;
+      }
+
+      .delete-button {
+        background-color: #dc3545;
+      }
+
+      .edit-button {
+        background-color: #ff00f7;
+      }
+
+      .schedule-button {
+        background-color: #35dcbb;
+      }
+      .done-button {
+        background-color: #35a4dc;
+      }
+    }
+  }
+}
